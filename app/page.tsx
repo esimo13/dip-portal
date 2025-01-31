@@ -215,7 +215,7 @@ const projects = [
     title: "Brain Tumor Classification",
     description: "Roll: 2055 , 2056,  2057",
     image: "/images/Group17.png",
-    category: "Classification",
+    category: "DL",
     detailedDescription:
       "This project focuses on creating a web-based application for detecting brain tumors using MRI images. The application analyzes MRI scans to classify tumors into four categories: glioma, meningioma, pituitary, and no tumor. It leverages deep learning models such as ResNet152, EfficientNetB7, and Xception for accurate image processing and tumor classification. The backend is developed using Python with Flask, ensuring efficient processing and seamless integration. React is utilized for the frontend to deliver a dynamic, responsive user interface. This combination of advanced technologies provides an intuitive and efficient platform for automated brain tumor detection, aiding in early diagnosis and treatment planning.",
     technologies: ["Python", "Flask", "REACT"],
