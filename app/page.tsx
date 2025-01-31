@@ -334,11 +334,14 @@ export default function Home() {
           {/* {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))} */}
-          {filteredProjects
+          {/* {filteredProjects
             .filter((project) => project !== undefined) // Ensure project is defined
             .map((project) => (
               <ProjectCard key={project.id} project={project} />
-            ))}
+            ))} */}
+          {filteredProjects.map((project) =>
+            project ? <ProjectCard key={project?.id} project={project} /> : null
+          )}
         </div>
       </div>
     </div>
