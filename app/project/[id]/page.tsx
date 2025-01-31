@@ -83,7 +83,7 @@ const projects = [
     category: "ML",
     detailedDescription:
       "This project focuses on developing a web-based application for detecting pneumonia from chest X-ray images. The application processes X-ray scans to classify them as either normal or pneumonia-affected using a deep learning-based convolutional neural network (CNN). Builds a web-based pneumonia detection system using chest X-ray images. A CNN model with confidence-aware anomaly detection classifies scans as normal or pneumonia-affected. Developed with Python (TensorFlow) for the backend and Streamlit for the frontend, it ensures efficient processing and an interactive user experience for real-time diagnosis. The system leverages data augmentation techniques to enhance model robustness and accuracy. Its user-friendly interface allows easy image uploads, providing quick and reliable results to assist in early medical intervention.",
-    technologies: ["Next.js", "Ethereum", "IPFS", "Three.js"],
+    technologies: ["Python", "Streamlit", "OpenCV", "scikit-learn"],
     projectUrl: "https://youtu.be/49EbtKCQ-cw",
   },
   {
