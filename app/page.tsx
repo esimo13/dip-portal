@@ -298,12 +298,14 @@ const projects = [
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredProjects = projects.filter(
-    (project) =>
+  const filteredProjects = projects.filter((project) => {
+    if (!project) return false;
+    return (
       project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.category.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+    );
+  });
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white dark:from-purple-950 dark:to-gray-900">
@@ -329,9 +331,14 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
+          {/* {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
-          ))}
+          ))} */}
+          {filteredProjects
+            .filter((project) => project !== undefined) // Ensure project is defined
+            .map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
         </div>
       </div>
     </div>
